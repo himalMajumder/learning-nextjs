@@ -23,14 +23,6 @@ export default function Home() {
 				<meta name='keywords' content='nextjs, hunting coder blog, hunting coder' />
 				<link ref='icon' href='/favicon.ico' />
 			</Head>
-			<nav className={styles.mainnav}>
-				<ul>
-					<li>Home</li>
-					<li>About </li>
-					<li>Blog</li>
-					<li>Contact</li>
-				</ul>
-			</nav>
 			<main className={styles.main}>
 				<h1 className={styles.title}>
 					<span className="dummy">
