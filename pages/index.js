@@ -30,14 +30,14 @@ export default function Home() {
 					</span>
 				</h1>
 				<div className={styles.imageWrap}>
-					<Image src='/home.jpg' className={styles.myImage} width={240} height={160}/>
+					<Image src='/home.jpg' className={styles.myImage} width={240} height={160} alt="Home Page Image"/>
 				</div>
 
 				<p className={styles.description}>
 					A blog for hunting coders by a hunting coder.
 				</p>
 				<div className="blogs">
-					<h2>Popular Item</h2>
+					<h2>Lates Blogs</h2>
 					<div className="blogItem">
 						<h3>How to learn Javascript in 2022</h3>
 						<p>Javascript is the language used to design logic for the web</p>
