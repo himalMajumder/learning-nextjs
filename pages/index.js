@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script';
-import Dummy from '../components/dummy';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
 	return (
 		<div className={styles.container}>
-		<Dummy/>
+			<style jsx>
+				{`
+					h2{
+						font-size: 38px;
+					}
+					h3{
+						font-size: 28px;
+					}
+
+				`}
+			</style>
 			<Head>
 				<title>Hunting Coder</title>
 				<meta name="description" content="Generate by create next app" />
@@ -28,6 +37,10 @@ export default function Home() {
 						Hunting Coder
 					</span>
 				</h1>
+				<div className={styles.imageWrap}>
+					<Image src='/home.jpg' className={styles.myImage} width={240} height={160}/>
+				</div>
+
 				<p className={styles.description}>
 					A blog for hunting coders by a hunting coder.
 				</p>
@@ -55,13 +68,7 @@ export default function Home() {
 					</div>
 				</div>
 			</main>
-			<footer className={styles.footer}>
-				<a href="#" target='_blank' rel='noopener noreferrer'>
-					Power by {' '}
-					<span className={styles.logo}>
-						<Image src='/vercel.vg' alt='VercelLogo' width={72} height={16} />
-					</span>
-				</a>
+			<footer className={styles.footer}> 
 			</footer>
 		</div>
 	);
