@@ -10,16 +10,9 @@ export default function Home() {
 				{`
 					h2{
 						font-size: 40px;
-					}
-					h3{
 						font-size: 40px;
-						text-align:center;
-					}
-					h4{
-						font-size: 50px;
-					}
-					h1{
-						font-size: 50px;
+						font-size: 40px;
+						font-size: 40px;
 					}
 				`}
 			</style>
