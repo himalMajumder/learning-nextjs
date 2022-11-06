@@ -9,13 +9,16 @@ export default function Home() {
 			<style jsx>
 				{`
 					h2{
-						font-size: 40px;
+						font-size: 50px;
 					}
 					h2{
-						font-size: 23px;
+						font-size: 50px;
 					}
 					h2{
-						font-size: 32px;
+						font-size: 50px;
+					}
+					h1{
+						font-size: 50px;
 					}
 
 				`}
