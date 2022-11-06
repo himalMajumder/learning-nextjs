@@ -15,10 +15,12 @@ export default function Home() {
 						font-size: 40px;
 						text-align:center;
 					}
+					h4{
+						font-size: 50px;
+					}
 					h1{
 						font-size: 50px;
 					}
-
 				`}
 			</style>
 			<Head>
