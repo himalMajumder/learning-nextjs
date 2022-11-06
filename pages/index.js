@@ -11,16 +11,16 @@ export default function Home() {
 					h2{
 						font-size: 50px;
 					}
-					h2{
-						font-size: 50px;
+					h3{
+						font-size: 40px;
+						text-align:center;
 					}
-					h2{
+					h4{
 						font-size: 50px;
 					}
 					h1{
 						font-size: 50px;
 					}
-
 				`}
 			</style>
 			<Head>
