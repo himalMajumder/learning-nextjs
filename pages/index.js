@@ -10,12 +10,11 @@ export default function Home() {
 				{`
 					h2{
 						font-size: 50px;
-					}
-					h3{
-						font-size: 40px;
-						font-size: 40px;
-						font-size: 40px;
-					}
+						font-size: 50px;
+						font-size: 50px;
+						font-size: 50px;
+						font-size: 50px;
+					} 
 				`}
 			</style>
 			<Head>
