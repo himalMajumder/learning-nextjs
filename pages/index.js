@@ -11,7 +11,10 @@ export default function Home() {
 					h2{
 						font-size: 40px;
 					}
-					h3{
+					h2{
+						font-size: 23px;
+					}
+					h2{
 						font-size: 32px;
 					}
 
