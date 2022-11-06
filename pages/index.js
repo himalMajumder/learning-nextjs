@@ -9,7 +9,9 @@ export default function Home() {
 			<style jsx>
 				{`
 					h2{
-						font-size: 40px;
+						font-size: 50px;
+					}
+					h3{
 						font-size: 40px;
 						font-size: 40px;
 						font-size: 40px;
