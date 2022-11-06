@@ -12,7 +12,11 @@ export default function Home() {
 						font-size: 40px;
 					}
 					h3{
-						font-size: 32px;
+						font-size: 40px;
+						text-align:center;
+					}
+					h1{
+						font-size: 50px;
 					}
 
 				`}
