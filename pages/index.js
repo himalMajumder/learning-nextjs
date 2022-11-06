@@ -8,11 +8,10 @@ export default function Home() {
 		<div className={styles.container}>
 			<style jsx>
 				{`
+					h1{
+						font-size: 50px;
+					} 
 					h2{
-						font-size: 50px;
-						font-size: 50px;
-						font-size: 50px;
-						font-size: 50px;
 						font-size: 50px;
 					} 
 				`}
