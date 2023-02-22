@@ -5,6 +5,7 @@ import styles from '../../styles/BlogPost.module.css'
 // step1: find the file corresponding to the slug
 // step2: Populate them inside the page
 // step3: 
+
 const Slug = () => {
   const router = useRouter();
   const { slug } = router.query;
