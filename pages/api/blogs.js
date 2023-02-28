@@ -2,6 +2,11 @@
 import * as fs from 'node:fs';
 
 export default async function handler(req, res) {
+  // //Test fetch data from api page
+  // fetch('https://api.agify.io?name=meelad')
+  // .then((data) => data.json())
+  // .then((data) => console.log(data));
+
   let data = await fs.promises.readdir('./blogData');
   let allBlogs = [];
   let myFile ;
