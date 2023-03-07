@@ -9,7 +9,25 @@ const Contact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(111);
+		console.log(name, email, phone, description);
+		const formData = {name, email, phone, description};
+
+		fetch('http://localhost:3000/api/postcontact', {
+			method : "POST",
+			headers : {
+				'Content-type' : 'application/json'
+			},
+			body : JSON.stringify(formData)
+		})
+        .then(response => response.json())
+        .then(data => {
+			console.log(data)
+			setName('');
+			setEmail('');
+			setPhone('');
+			setDescription('');
+		})
+		.catch(error => console.log('Error', error));
 		
 	}
 
@@ -29,8 +47,8 @@ const Contact = () => {
 						name="name"
 						id="name"
 						value={name}
-						onChange={handleChange}
-						placeholder="Name"
+						onChange={(e) => setName(e.target.value)}
+						placeholder="Enter Name"
 						className="form-control"
 					/>
 				</div>
@@ -43,8 +61,8 @@ const Contact = () => {
 						name="email"
 						id="email"
 						value={email}
-						onChange={handleChange}
-						placeholder="Phone"
+						onChange={(e) => setEmail(e.target.value)}
+						placeholder="Enter Email Address"
 						className="form-control"
 					/>
 				</div>
@@ -57,8 +75,8 @@ const Contact = () => {
 						name="phone"
 						id="phone"
 						value={phone}
-						onChange={handleChange}
-						placeholder="Phone"
+						onChange={(e) => setPhone(e.target.value)}
+						placeholder="Enter Phone"
 						className="form-control"
 					/>
 				</div>
@@ -69,10 +87,10 @@ const Contact = () => {
 					<textarea
 						name="description"
 						id="description"
-						placeholder="Description"
+						placeholder="Enter Description"
 						className="form-control"
 						value={description}
-						onChange={handleChange}
+						onChange={(e) => setDescription(e.target.value)}
 					></textarea>
 				</div> 
 				<button type="submit" className="btn btn-primary">
