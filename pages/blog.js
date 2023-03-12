@@ -1,11 +1,15 @@
 import Link from 'next/link'
 import React, {useEffect, useState} from 'react'
 import styles from '../styles/Blog.module.css'
+import { Message_Value } from '../context/context'
+import Head from 'next/head'
 
 // Step 1: collect all the files from blog data directory
 // step 2: Iterate through the and display them
 
 const Blog = (props) => {
+  const { message, apiData} = Message_Value();
+  console.log(apiData);
   const [blogs, setBlogs] = useState(props.allBlogs);
 
   // useEffect(() => {
@@ -19,6 +23,9 @@ const Blog = (props) => {
   
   return (
     <div className={styles.container}>
+      <Head>
+        <title>{message } - {blogs.length} </title>
+      </Head>
       <main className={styles.main}>
         { blogs.length > 0 && blogs.map((blog, index) => (
           <div className="blogItem" key={index}>
