@@ -49,7 +49,8 @@ const Contact = () => {
 						value={name}
 						onChange={(e) => setName(e.target.value)}
 						placeholder="Enter Name"
-						className="form-control"
+						className={styles.input}
+						required
 					/>
 				</div>
 				<div className={styles.mb3}>
@@ -63,7 +64,8 @@ const Contact = () => {
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 						placeholder="Enter Email Address"
-						className="form-control"
+						className={styles.input}
+						required
 					/>
 				</div>
 				<div className={styles.mb3}>
@@ -77,7 +79,8 @@ const Contact = () => {
 						value={phone}
 						onChange={(e) => setPhone(e.target.value)}
 						placeholder="Enter Phone"
-						className="form-control"
+						className={styles.input}
+						required
 					/>
 				</div>
 				<div className={styles.mb3}>
@@ -88,12 +91,12 @@ const Contact = () => {
 						name="description"
 						id="description"
 						placeholder="Enter Description"
-						className="form-control"
+						className={styles.input}
 						value={description}
 						onChange={(e) => setDescription(e.target.value)}
 					></textarea>
 				</div> 
-				<button type="submit" className="btn btn-primary">
+				<button type="submit" className={styles.btn}>
 					Submit
 				</button>
 			</form>

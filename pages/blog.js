@@ -33,6 +33,7 @@ const Blog = (props) => {
               <h3 className={styles.blogItemH3}>{blog.title}</h3>
             </Link>
               <p>{ blog.content.substring(0, 100) }...</p>
+						<button className={styles.btn}> Read More</button>
           </div>
         ))}
       </main>
